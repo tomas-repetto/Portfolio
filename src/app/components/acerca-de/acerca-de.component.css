@@ -21,7 +21,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px yellow;
         left: 3%;
-        top: 700px;
+        top: 640px;
     }
 }
 @media (max-width: 575px){
@@ -31,6 +31,6 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 40%;
-        top: 720px;
+        top: 675px;
     }
 }
