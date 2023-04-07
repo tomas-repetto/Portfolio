@@ -1,13 +1,13 @@
-package com.portfolio.tomas;
+package com.portfolio.portfolio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TomasApplication {
+public class PortfolioApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TomasApplication.class, args);
+		SpringApplication.run(PortfolioApplication.class, args);
 	}
 
 }
