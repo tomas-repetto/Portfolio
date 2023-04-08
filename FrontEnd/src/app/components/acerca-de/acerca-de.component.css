@@ -9,8 +9,22 @@ div{
 
 #nombre{
     font-weight: bold;
-    margin-top: 25%;
+    margin-top: 30%;
+    margin-left: 20%;
     color: white;
+}
+.puesto{
+    margin-left: 20%;
+}
+span{
+    text-align: left;
+    margin: 20px;
+}
+p{
+    margin-left: 4%;
+}
+h1{
+    margin-left: 4%;
 }
 
 /*Esilo de la foto de perfil*/
@@ -21,7 +35,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px yellow;
         left: 3%;
-        top: 660px;
+        top: 610px;
     }
 }
 @media (max-width: 575px){
@@ -32,5 +46,14 @@ div{
         box-shadow: 3px 3px 3px grey;
         left: 40%;
         top: 745px;
+    }
+    #nombre{
+        font-weight: bold;
+        margin-top: 5%;
+        color: white;
+        margin-left: 0;
+    }
+    .puesto{
+        margin-left: 0;
     }
 }
