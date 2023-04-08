@@ -35,6 +35,16 @@ h1{
         border-radius: 100%;
         box-shadow: 3px 3px 3px yellow;
         left: 3%;
+        top: 650px;
+    }
+}
+@media (min-width: 1200px){
+    #fotoperfil{
+        position:absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px yellow;
+        left: 3%;
         top: 610px;
     }
 }
