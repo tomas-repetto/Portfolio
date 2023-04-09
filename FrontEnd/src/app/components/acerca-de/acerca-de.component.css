@@ -33,7 +33,7 @@ h1{
         position:absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px yellow;
+        box-shadow: 2px 4px 0px #F2E952;
         left: 3%;
         top: 650px;
     }
@@ -43,7 +43,7 @@ h1{
         position:absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px yellow;
+        box-shadow: 2px 4px 0px #F2E952;
         left: 3%;
         top: 610px;
     }
@@ -53,7 +53,7 @@ h1{
         position:absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
+        box-shadow: 2px 4px 0px #F2E952;
         left: 40%;
         top: 745px;
     }
