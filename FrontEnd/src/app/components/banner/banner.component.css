@@ -9,3 +9,9 @@
 h1{
     font-size: 85px;
 }
+
+@media (max-width: 575px){
+    h1{
+        font-size: 40px;
+    }
+}
