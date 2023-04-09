@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
  * @author tomyr
  */
 @Repository
-public interface IUsuarioRepository extends JpaRepository<Usuario, Integer>{
+public interface iUsuarioRepository extends JpaRepository<Usuario, Integer>{
     Optional<Usuario> findByNombreUsuario(String nombreUsuario);
     
     boolean existsByNombreUsuario(String nombreUsuario);
