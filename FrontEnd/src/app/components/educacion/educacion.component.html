@@ -2,12 +2,47 @@
     <h1>Educacion</h1>
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
+
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
+                Nuevo Titulo
+            </button>
+        </div>
+
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let Educacion of educacion">
+                        <td>
+                            <h2>{{Educacion.nombreE}}</h2>
+                        </td>
+                        <td>{{Educacion.descripcionE}}</td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-warning" routerLink="/editexp/{{Educacion.id}}">
+                                <i class="bi bi-pencil-fill"></i> EDITAR
+                            </button>
+                        </td>
+
+
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                                <i class="bi bi-trash"></i> BORRAR
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <ul>
             <li>
                 <h1>Tecnico en Informatica personal y profesional</h1> - <h3>(4 Años)</h3>
             </li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo delectus fugiat nobis nostrum sit placeat enim inventore, rerum obcaecati aspernatur, tempore voluptates voluptate maiores quas repellat. Facilis, consequatur quas.</p>
- 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo delectus fugiat nobis nostrum sit
+                placeat enim inventore, rerum obcaecati aspernatur, tempore voluptates voluptate maiores quas repellat.
+                Facilis, consequatur quas.</p>
+
         </ul>
         <ul>
             <li>
@@ -16,18 +51,22 @@
             <div class="imagen">
                 <img src="../../../assets/argProgramaCerticate.png" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo delectus fugiat nobis nostrum sit placeat enim inventore, rerum obcaecati aspernatur, tempore voluptates voluptate maiores quas repellat. Facilis, consequatur quas.</p>
- 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo delectus fugiat nobis nostrum sit
+                placeat enim inventore, rerum obcaecati aspernatur, tempore voluptates voluptate maiores quas repellat.
+                Facilis, consequatur quas.</p>
+
         </ul>
         <ul>
             <li>
-                <h1>Emprendimiento</h1> - <h3>(Silex)</h3>
+                <h1>Empresas</h1> - <h3>(Silex)</h3>
             </li>
             <div class="imagen">
                 <img src="../../../assets/silex.png" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo delectus fugiat nobis nostrum sit placeat enim inventore, rerum obcaecati aspernatur, tempore voluptates voluptate maiores quas repellat. Facilis, consequatur quas.</p>
- 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo delectus fugiat nobis nostrum sit
+                placeat enim inventore, rerum obcaecati aspernatur, tempore voluptates voluptate maiores quas repellat.
+                Facilis, consequatur quas.</p>
+
         </ul>
     </div>
 </div>
