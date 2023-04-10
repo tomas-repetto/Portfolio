@@ -11,28 +11,36 @@
 
         <div class="col-lg-1"></div>
         <div class="col-lg-11">
-            <table class="table">
-                <tbody>
-                    <tr *ngFor="let Educacion of educacion">
-                        <td>
-                            <h2>{{Educacion.nombreE}}</h2>
-                        </td>
-                        <td>{{Educacion.descripcionE}}</td>
-                        <td *ngIf="isLogged">
-                            <button class="btn btn-warning" routerLink="/editedu/{{Educacion.id}}">
-                                <i class="bi bi-pencil-fill"></i> EDITAR
-                            </button>
-                        </td>
-
-
-                        <td *ngIf="isLogged">
-                            <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                                <i class="bi bi-trash"></i> BORRAR
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul>
+                <table class="table">
+                    <tbody>
+                        <tr *ngFor="let Educacion of educacion">
+                            
+                                <li>
+                                    <td>
+                                        <h1>{{Educacion.nombreE}}</h1>
+                                    </td>
+                                </li>
+                                <p>
+                                    <td>{{Educacion.descripcionE}}</td>
+                                </p>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-warning" routerLink="/editedu/{{Educacion.id}}">
+                                        <i class="bi bi-pencil-fill"></i> EDITAR
+                                    </button>
+                                </td>
+        
+        
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                                        <i class="bi bi-trash"></i> BORRAR
+                                    </button>
+                                </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
         </div>
 
         <ul>
